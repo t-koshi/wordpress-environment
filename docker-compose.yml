@@ -38,7 +38,7 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./nginx/log:/var/log/nginx
-      - ./wordpress:/var/www/html
+      - ./wordpress-develop:/var/www/html
     depends_on:
       - wordpress
     restart: always
